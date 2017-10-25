@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CAFETERÍAS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html"><img src="img/productos.png"></a></li>
+			<li><a href="cafeterias.html"><img src="img/cafeterias.png" class="imgact"></a></li>
+			<li class="actual"><a><img src="img/menu.png"></a></li>
+			<li><a href=""><img src="img/menu.png"></a></li>
+		</ul>
+	</nav>
+	<!-- <div class="masopciones">
+		<ul>
+			<li>Opción 1</li>
+			<li>Opción 2</li>
+			<li>Opción 3</li>
+			<li>Opción 4</li>
+			<li>Opción 5</li>
+		</ul>
+	</div> -->
+
+	<section class="alertas_des">
+		<h1>Pedidos recientes</h1>
+		<div class="pedido_hecho no-vista">
+			<img src="img/salir.png">
+			<p>1 torta de huevo con jamón</p>
+			<p>1 orden de enchiladas verdes s/queso</p>
+		</div>
+		<div class="pedido_hecho">
+			<img src="img/salir.png">
+			<p>1 torta de huevo con jamón</p>
+			<p>1 orden de enchiladas verdes s/queso</p>
+		</div>
+		<div class="pedido_hecho no-vista">
+			<img src="img/salir.png">
+			<p>1 torta de huevo con jamón</p>
+			<p>1 orden de enchiladas verdes s/queso</p>
+		</div>
+
+		<a href="pedidos.html">Ver todos los pedidos</a>
+	</section>
+
+	<header class="header">
+		<div class="notificaciones" onclick="desplegarAlertas()">
+			<i class="fa fa-bell-o" aria-hidden="true"></i>
+			<p>5</p>
+		</div>
+		<div id="datosUsuario">
+			<img src="img/user.jpg">
+			<h1>Leonardo Gasca</h1>
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</div>
+	</header>
+
+
+	<div class="contenedor">
+		<div class="contbuscador">
+			<div class="menupedidos">
+				<div class="vacio"><p>Filtro de pedidos</p></div>
+				<button onclick="desplegarOpciones()"><i class="fa fa-angle-down" ></i></button>
+			</div>
+			<div class="opciones">
+					<div class="opcion" onclick="tablarecientes()">
+						<p>Recientes</p>
+					</div>
+					<div class="opcion" onclick="tablaproceso()">
+						<p>En proceso</p>
+					</div>
+					<div class="opcion" onclick="tablaentregados()">
+						<p>Entregados</p>
+					</div>
+			</div>
+		</div>
+		<div class="cont">
+			<div class="recientes" id="tablarecientes">
+				<table>
+					<tr>
+						<th class="tamañoh">Hora de solicitud</th>
+						<th>Pedido</th>
+						<th>Especificaciones</th>
+						<th class="tamañoh">Hora de entrega</th>
+						<th>Usuario</th>
+						<th class="tamañoe"><img title="En Proceso" src="img/proceso.png"></th>
+						<th class="tamañoe"><img title="Entregado" src="img/entregado.png"></th>
+					</tr>
+					<tr>
+						<td>9:35 am</td>
+						<td>1 torta de huevo</td>
+						<td>Sin cebolla y chile</td>
+						<td>10:00 am</td>
+						<td>fernandaJuarez</td>
+						<td>
+							<input type="checkbox" name="">
+						</td>
+						<td>
+							<input type="checkbox" name="">
+						</td>
+					</tr>
+					<tr>
+						<td>9:45 am</td>
+						<td>1 orden de chilaquiles</td>
+						<td>Sin cebolla y con crema</td>
+						<td>10:05 am</td>
+						<td>fernandaJuarez</td>
+						<td>
+							<input type="checkbox" name="">
+						</td>
+						<td>
+							<input type="checkbox" name="">
+						</td>
+					</tr>
+					<tr>
+						<td>9:47 am</td>
+						<td>1 hamburguesa sencilla</td>
+						<td>Sin cebolla y mayonesa, con chiles</td>
+						<td>10:05 am</td>
+						<td>María Fernanda Juárez</td>
+						<td>
+							<input type="checkbox" name="">
+						</td>
+						<td>
+							<input type="checkbox" name="">
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="enproceso">
+				<table>
+					<tr>
+						<th class="tamañoh">Hora de solicitud</th>
+						<th>Pedido</th>
+						<th>Especificaciones</th>
+						<th class="tamañoh">Hora de entrega</th>
+						<th>Usuario</th>
+					</tr>
+					<tr>
+						<td>9:35 am</td>
+						<td>1 torta de huevo</td>
+						<td>Sin cebolla y chile</td>
+						<td>10:00 am</td>
+						<td>fernandaJuarez</td>
+					</tr>
+					<tr>
+						<td>9:45 am</td>
+						<td>1 orden de chilaquiles</td>
+						<td>Sin cebolla y con crema</td>
+						<td>10:05 am</td>
+						<td>fernandaJuarez</td>
+					</tr>
+					<tr>
+						<td>9:47 am</td>
+						<td>1 hamburguesa sencilla</td>
+						<td>Sin cebolla y mayonesa, con chiles</td>
+						<td>10:05 am</td>
+						<td>María Fernanda Juárez</td>
+				</table>
+			</div>
+
+			<div class="entregados">
+				<table>
+					<tr>
+						<th class="tamañoh">Hora de solicitud</th>
+						<th>Pedido</th>
+						<th>Especificaciones</th>
+						<th class="tamañoh">Hora de entrega</th>
+						<th>Usuario</th>
+					</tr>
+					<tr>
+						<td>9:35 am</td>
+						<td>1 torta de huevo</td>
+						<td>Sin cebolla y chile</td>
+						<td>10:00 am</td>
+						<td>fernandaJuarez</td>
+					</tr>
+					<tr>
+						<td>9:45 am</td>
+						<td>1 orden de chilaquiles</td>
+						<td>Sin cebolla y con crema</td>
+						<td>10:05 am</td>
+						<td>fernandaJuarez</td>
+					</tr>
+					<tr>
+						<td>9:47 am</td>
+						<td>1 hamburguesa sencilla</td>
+						<td>Sin cebolla y mayonesa, con chiles</td>
+						<td>10:05 am</td>
+						<td>María Fernanda Juárez</td>
+					</tr>
+					<tr>
+						<td>9:50 am</td>
+						<td>1 torta de milanesa</td>
+						<td>Sin cebolla </td>
+						<td>10:15 am</td>
+						<td>María Fernanda Juárez Tirado</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
