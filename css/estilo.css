@@ -294,6 +294,7 @@ nav{
 	}
 	.menupedidos>.vacio{
 		line-height: 35px;
+		color: rgba(0,0,0,.6);
 	}
 	.opciones{
 		width: 67%;
