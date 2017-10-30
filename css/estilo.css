@@ -171,7 +171,6 @@ nav{
 	}
 .alertas_des{
 	width: 30%;
-	height: 250px;
 	background: rgb(252,252,252);
 	float: right;
 	z-index: 9999999;
@@ -199,7 +198,6 @@ nav{
 	}
 	.alertas_des>.pedido_hecho{
 		width: 100%;
-		height: 55px;
 		float: left;
 		position: relative;
 		border-bottom: 1px solid rgba(0,0,0,.2);
@@ -298,7 +296,6 @@ nav{
 	}
 	.opciones{
 		width: 67%;
-		height: 100px;
 		margin-top: -24px;
 		margin-left: 16.5%;
 		box-sizing: border-box;
@@ -310,15 +307,16 @@ nav{
 	}
 	.opcion{
 		width: 100%;
-		height: 33.3%;
+		height: auto;
 		float: left;
 		position: relative;
 		background: rgb(252,252,252);
-		padding-left: 20px;
+		padding-left: 20px !important;
 		box-sizing: border-box;
 		cursor: default;
 		padding-top: 3px;
 		cursor: pointer;
+		padding: 5px;
 	}
 	.opcion:hover{
 		background: #EDF2FA;
@@ -445,7 +443,7 @@ nav{
 		font-size: .9em;
 		color: var(--colorprecio);
 	}
-.recientes, .enproceso, .entregados{
+.recientes, .enproceso, .entregados, .cafeterias, .tipo, .cafeteriaventa, .pedidos{
 	width: 100%;
 	height: 100%;
 	float: left;
@@ -453,6 +451,7 @@ nav{
 	padding: 10px;
 	box-sizing: border-box;
 	display: none;
+	text-align: center;
 }
 .recientes{
 	display: block !important;
