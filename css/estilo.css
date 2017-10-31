@@ -13,6 +13,18 @@
 body{
 	background: rgb(242,241,239);
 }
+.bg{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.2);
+	float: left;
+	position: fixed;
+	z-index: 9999999;
+	display: none;
+}
+.ver-bg{
+	display: block !important;
+}
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -90,6 +102,65 @@ nav{
 		border-bottom: 1.5px solid rgba(128,129,125,.4);
 		padding: 10px;
 		cursor: pointer;
+	}
+/*=========================== ALERTAS ==================================*/
+.alerta_cs{
+	width: 20%;
+	height: 100px;
+	float: left;
+	position: relative;
+	margin-left: 50%;
+	left: -10%;
+	margin-top: 20%;
+	background: #fff;
+	z-index: 99999999999;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 1px 0px 10px 0px rgba(0,0,0,.4);
+	display: none;
+}
+.ver-acs{
+	display: block !important;
+}
+	h3{
+		width: 100%;
+		height: 30px;
+		float: left;
+		position: relative;
+		color: rgba(0,0,0,.8);
+		padding-bottom: 10px;
+		box-sizing: border-box;
+		font-weight: 400;
+	}
+	#sino{
+		width: 100%;
+		height: calc(100% - 30px);
+		float: left;
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
+	}
+	.sino{
+		width: 30%;
+		height: 30px;
+		float: left;
+		position: relative;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		border-radius: 5px;
+		font-weight: 700;
+		color: rgba(0,0,0,.8);
+	}
+	.verde{
+		background: #94FCC0;
+	}
+	.rojo{
+		background: #EF565A;
 	}
 /*========================== ENCABEZADO ================================*/
 .header{
@@ -444,7 +515,7 @@ nav{
 		font-size: .9em;
 		color: var(--colorprecio);
 	}
-.recientes, .enproceso, .entregados, .cafeterias, .tipo, .cafeteriaventa, .pedidos{
+.recientes, .enproceso, .entregados, .cafeterias, .tipo, .cafeventa, .pedidos{
 	width: 100%;
 	height: 100%;
 	float: left;
@@ -460,7 +531,7 @@ nav{
 .ver-recientes{
 	display: none !important;
 }
-.ver-enproceso, .ver-entregados{
+.ver-enproceso, .ver-entregados, .ver-cafeterias, .ver-tipo{
 	display: block !important;
 }
 	.recientes>table{
@@ -509,7 +580,33 @@ nav{
     tr:nth-child(odd){
        background: rgba(0,0,0,.08);
     }
-
+    .grafica-grande{
+    	width: 70%;
+		height: 350px;
+		position: relative;
+		float: left;
+		margin-left: 50%;
+		left: -35%;
+		margin-top: 15px;
+		border-radius: 5px;
+		border: 2px solid rgba(0,0,0,.2);
+		padding: 5px;
+		box-sizing: border-box;
+		display: flex;
+    	justify-content: center;
+    	align-content: center;
+    	align-items: center;
+    }
+    .grafica-grande>img{
+    	width: 90%;
+    	height: 90%;
+    	float: left;
+    	position: relative;
+    	display: flex;
+    	justify-content: center;
+    	align-content: center;
+    	align-items: center;
+    }
 
 
 
