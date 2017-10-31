@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
+<div class="bg"></div>
 	<nav>
 		<ul>
 			<li><a href="index.html"><img src="img/productos.png"></a></li>
@@ -26,6 +27,13 @@
 			<li>Opción 5</li>
 		</ul>
 	</div> -->
+	<section class="alerta_cs">
+		<h3>¿Desea cerrar sesión?</h3>
+		<div id="sino">
+			<input type="submit" name="" value="Si" class="sino verde" onclick="salir()">
+			<input type="submit" name="" value="No" class="sino rojo" onclick="permanecer()">
+		</div>
+	</section>
 
 	<section class="alertas_des">
 		<h1>Pedidos recientes</h1>
@@ -56,7 +64,7 @@
 		<div id="datosUsuario">
 			<img src="img/user.jpg">
 			<h1>Leonardo Gasca</h1>
-			<i class="fa fa-angle-down" aria-hidden="true"></i>
+			<i class="fa fa-sign-out" aria-hidden="true" onclick="cerrarSesion()"></i>
 		</div>
 	</header>
 

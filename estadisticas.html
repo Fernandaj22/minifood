@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
+<div class="bg"></div>
 	<nav>
 		<ul>
 			<li><a href="index.html"><img src="img/productos.png" class="imgact"></a></li>
@@ -18,6 +19,13 @@
 		</ul>
 	</nav>
 
+	<section class="alerta_cs">
+		<h3>¿Desea cerrar sesión?</h3>
+		<div id="sino">
+			<input type="submit" name="" value="Si" class="sino verde" onclick="salir()">
+			<input type="submit" name="" value="No" class="sino rojo" onclick="permanecer()">
+		</div>
+	</section>
 
 	<section class="alertas_des">
 		<h1>Pedidos recientes</h1>
@@ -52,18 +60,17 @@
 			<i class="fa fa-sign-out" aria-hidden="true" onclick="cerrarSesion()"></i>
 		</div>
 	</header>
-
 	<div class="contenedor">
 		<div class="contbuscador">
 			<div class="menupedidos">
-				<div class="vacio"><p id="idn">Cafeterías</p></div>
+				<div class="vacio"><p id="idn">Estadísticas por...</p></div>
 				<button onclick="desplegarOpciones()"><i class="fa fa-angle-down" ></i></button>
 			</div>
 			<div class="opciones">
-					<div class="opcion" onclick="">
+					<div class="opcion" onclick="gcafeterias()">
 						<p>Cafeterías</p>
 					</div>
-					<div class="opcion" onclick="">
+					<div class="opcion" onclick="gtipo()">
 						<p>Tipo de producto</p>
 					</div>
 					<div class="opcion" onclick="">
@@ -79,7 +86,7 @@
 			<div class="cafeterias">
 			  <h2>Ventas globales por mes</h2>
 			  <h3>Mes de Junio</h3>
-				<div class="registrado">
+				<div class="grafica-grande">
 					<img src="img/graficaprueba.png">
 				</div>
 			</div>
@@ -87,18 +94,19 @@
 			<div class="tipo">
 			  <h2>Categorías</h2>
 			  <select>
-			  	<option>Frutas/Verduras</option>
-			  	<option>Comida rápida</option>
-			  	<option>Frituras</option>
-			  	<option>Dulces</option>
-			  	<option>Refrescos</option>
+				  	<option>Frutas/Verduras</option>
+				  	<option>Comida rápida</option>
+				  	<option>Frituras</option>
+				  	<option>Dulces</option>
+				  	<option>Refrescos</option>
 			  </select>
-				<div class="registrado">
+			  <h3>Gráfica general del tipo de producto vendido al mes</h3>
+				<div class="grafica-grande">
 					<img src="img/graficaprueba.png">
 				</div>
 			</div>
 
-			<div class="cafeteriaventa">
+			<div class="cafeventa">
 			  <h2>Categorías</h2>
 				<div class="registrado">
 					<img src="img/graficaprueba.png">
