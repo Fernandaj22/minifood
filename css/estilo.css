@@ -143,7 +143,7 @@ nav{
 	padding: 5px;
 	box-sizing: border-box;
 	cursor: pointer;
-}	
+}
 	.notificaciones:hover{
 		background: rgba(255,255,255,.1);
 	}
@@ -356,13 +356,13 @@ nav{
 		border: 2px dashed rgba(0,0,0,.2);
 		padding: 10px;
 		box-sizing: border-box;
-		
+
 	}
 	.nuevo>input, .nuevo>textarea{
 		width: 100%;
 		height: 25px;
 		padding: 5px;
-		box-sizing: border-box; 
+		box-sizing: border-box;
 		border: none;
 		border-radius: 3px;
 		border: 1px solid rgba(0,0,0,.2);
@@ -510,7 +510,6 @@ nav{
        background: rgba(0,0,0,.08);
     }
 
-
-
-
-
+.error{
+	border:1px solid #ff5d58 !important;
+}

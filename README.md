@@ -1,3 +1,3 @@
 # minifood
-Administrador de Cacfeterías
+Administrador de Cafeterías
 Hola!
