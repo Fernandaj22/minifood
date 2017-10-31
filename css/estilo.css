@@ -123,12 +123,13 @@ nav{
 		float: left;
 	}
 	#datosUsuario>i{
-		font-size: 1.8em !important;
+		font-size: 1.5em !important;
 		line-height: 60px !important;
 		color: rgba(255,255,255,.7);
 		margin-left: 10px;
 		display: block;
 		float: left;
+		cursor: pointer;
 	}
 .notificaciones{
 	width: 75px;

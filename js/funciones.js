@@ -1,3 +1,6 @@
+function cerrarSesion(){
+	document.querySelector('alerta_cs').classList.toggle('ver-acs');
+}
 function mostrarmas(){
 	document.querySelector('.masopciones').classList.toggle('veropciones');
 	document.querySelector('.header').classList.toggle('headermostmas');
