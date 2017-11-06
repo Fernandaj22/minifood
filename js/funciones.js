@@ -56,6 +56,7 @@ function gtipo(){
 	document.getElementById("idn").innerHTML = "Tipo de producto";
 }
 	function general(){
+		document.querySelector('.categoriag').classList.add('ver-categoriag');
 		document.querySelector('')
 	}
 function gventa(){
