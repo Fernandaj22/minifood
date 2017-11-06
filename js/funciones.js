@@ -55,3 +55,23 @@ function gtipo(){
 	document.querySelector(".pedidos").classList.remove("ver-pedidos");
 	document.getElementById("idn").innerHTML = "Tipo de producto";
 }
+	function general(){
+		document.querySelector('')
+	}
+function gventa(){
+	document.querySelector('.cafeterias').classList.remove("ver-cafeterias");
+	document.querySelector('.opciones').classList.remove('ver-opciones');
+	document.querySelector(".tipo").classList.remove("ver-tipo");
+	document.querySelector(".cafeventa").classList.add("ver-cafeventa");
+	document.querySelector(".pedidos").classList.remove("ver-pedidos");
+	document.getElementById("idn").innerHTML = "Venta general de la cafetería";
+}
+function gpedidos(){
+	document.querySelector('.cafeterias').classList.remove("ver-cafeterias");
+	document.querySelector('.opciones').classList.remove('ver-opciones');
+	document.querySelector(".tipo").classList.remove("ver-tipo");
+	document.querySelector(".cafeventa").classList.remove("ver-cafeventa");
+	document.querySelector(".pedidos").classList.add("ver-pedidos");
+	document.getElementById("idn").innerHTML = "Pedidos";
+}
+

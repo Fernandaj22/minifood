@@ -515,7 +515,8 @@ nav{
 		font-size: .9em;
 		color: var(--colorprecio);
 	}
-.recientes, .enproceso, .entregados, .cafeterias, .tipo, .cafeventa, .pedidos{
+.recientes, .enproceso, .entregados, .cafeterias, 
+.tipo, .cafeventa, .pedidos{
 	width: 100%;
 	height: 100%;
 	float: left;
@@ -531,7 +532,8 @@ nav{
 .ver-recientes{
 	display: none !important;
 }
-.ver-enproceso, .ver-entregados, .ver-cafeterias, .ver-tipo{
+.ver-enproceso, .ver-entregados, .ver-cafeterias, 
+.ver-tipo, .ver-cafeventa, .ver-pedidos{
 	display: block !important;
 }
 	.recientes>table{
@@ -607,6 +609,80 @@ nav{
     	align-content: center;
     	align-items: center;
     }
+    .submenu_grafica{
+    	width: 100%;
+    	height: 50px;
+    	float: left;
+    	position: relative;
+    }
+    .submenu{
+    	width: 40%;
+		border-radius: 20px;
+		height: 40px;
+		box-sizing: border-box;
+		border: 2px solid var(--verde);
+		overflow: hidden;
+		margin-left: 30%;
+		margin-right: 30%;
+    }
+    .submenu>button{
+    	background: var(--verde);
+		border: none;
+		width: 10%;
+		height: 100%;
+		font-size: 1em;
+		cursor: pointer;
+		color: var(--blanco);
+		outline: none;
+    }
+    .submenu>.vacio2{
+    	width: 90%;
+		border: none;
+		height: 100%;
+		text-align: center;
+		padding-left: 10px;
+		box-sizing: border-box;
+		font-size: 1em;
+		float: left;
+		outline: none;
+		line-height: 35px;
+		color: rgba(0,0,0,.6);
+    }
+    .opciones2{
+		width: 37%;
+		margin-left: 31.5%;
+		box-sizing: border-box;
+		float: left;
+		position: relative;
+		overflow: hidden;
+		display: none;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		box-shadow: -10px 10px 10px -12px rgba(0,0,0,.5);
+	}
+	.opcion2{
+		width: 100%;
+		height: auto;
+		float: left;
+		position: relative;
+		background: rgb(252,252,252);
+		padding-left: 20px !important;
+		box-sizing: border-box;
+		cursor: default;
+		padding-top: 3px;
+		cursor: pointer;
+		padding: 5px;
+	}
+	.opcion2:hover{
+		background: #EDF2FA;
+	}
+	.ver-opciones2{
+		display: block !important;
+	}
+	.categoriag, .categoriafv, .categoriacr, .categoriafr, .categoriad,
+	.categoriar, .categoriag{
+		display: none;
+	}
 
 
 
