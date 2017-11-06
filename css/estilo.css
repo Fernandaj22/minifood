@@ -526,13 +526,13 @@ nav{
 	display: none;
 	text-align: center;
 }
-.recientes{
+.recientes, .cafeterias{
 	display: block !important;
 }
-.ver-recientes{
+.ver-recientes, .ver-cafeterias{
 	display: none !important;
 }
-.ver-enproceso, .ver-entregados, .ver-cafeterias, 
+.ver-enproceso, .ver-entregados, 
 .ver-tipo, .ver-cafeventa, .ver-pedidos{
 	display: block !important;
 }
@@ -659,6 +659,7 @@ nav{
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
 		box-shadow: -10px 10px 10px -12px rgba(0,0,0,.5);
+		z-index: 99999;
 	}
 	.opcion2{
 		width: 100%;
@@ -679,11 +680,17 @@ nav{
 	.ver-opciones2{
 		display: block !important;
 	}
-	.categoriag, .categoriafv, .categoriacr, .categoriafr, .categoriad,
-	.categoriar, .categoriag{
+	.categoriafv, .categoriacr, .categoriafr, .categoriad,
+	.categoriar, .categoriagu{
 		display: none;
 	}
+	.categoriag{
+		display: block !important;
+	}
 	.ver-categoriag{
+		display: none !important;
+	}
+	.ver-categoriafv{
 		display: block !important;
 	}
 

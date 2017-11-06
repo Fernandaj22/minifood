@@ -18,6 +18,9 @@ function desplegarAlertas(){
 function desplegarOpciones(){
 	document.querySelector('.opciones').classList.toggle('ver-opciones');
 }
+function desplegarOp2(){
+	document.querySelector('.opciones2').classList.toggle('ver-opciones2');
+}
 function tablarecientes(){
 	document.querySelector('.recientes').classList.remove('ver-recientes');
 	document.querySelector('.opciones').classList.remove('ver-opciones');
@@ -40,15 +43,15 @@ function tablaentregados(){
 	document.getElementById("idn").innerHTML = "Pedidos entregados";
 }
 function gcafeterias(){
-	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
+	document.querySelector('.cafeterias').classList.remove('ver-cafeterias');
 	document.querySelector('.opciones').classList.remove('ver-opciones');
-	document.querySelector(".tipo").classList.remove("ver-tipo");
-	document.querySelector(".cafeventa").classList.remove("ver-cafeventa");
-	document.querySelector(".pedidos").classList.remove("ver-pedidos");
+	document.querySelector('.tipo').classList.remove('ver-tipo');
+	document.querySelector('.cafeventa').classList.remove('ver-cafeventa');
+	document.querySelector('.pedidos').classList.remove('ver-pedidos');
 	document.getElementById("idn").innerHTML = "Cafeterías";
 }
 function gtipo(){
-	document.querySelector('.cafeterias').classList.remove("ver-cafeterias");
+	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
 	document.querySelector('.opciones').classList.remove('ver-opciones');
 	document.querySelector(".tipo").classList.add("ver-tipo");
 	document.querySelector(".cafeventa").classList.remove("ver-cafeventa");
@@ -56,11 +59,18 @@ function gtipo(){
 	document.getElementById("idn").innerHTML = "Tipo de producto";
 }
 	function general(){
+		document.querySelector('.categoriag').classList.remove('ver-categoriag');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "General";
+	}
+	function frutasyverduras(){
 		document.querySelector('.categoriag').classList.add('ver-categoriag');
-		document.querySelector('')
+		document.querySelector('.categoriafv').classList.add('ver-categoriafv');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "General";
 	}
 function gventa(){
-	document.querySelector('.cafeterias').classList.remove("ver-cafeterias");
+	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
 	document.querySelector('.opciones').classList.remove('ver-opciones');
 	document.querySelector(".tipo").classList.remove("ver-tipo");
 	document.querySelector(".cafeventa").classList.add("ver-cafeventa");
@@ -68,7 +78,7 @@ function gventa(){
 	document.getElementById("idn").innerHTML = "Venta general de la cafetería";
 }
 function gpedidos(){
-	document.querySelector('.cafeterias').classList.remove("ver-cafeterias");
+	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
 	document.querySelector('.opciones').classList.remove('ver-opciones');
 	document.querySelector(".tipo").classList.remove("ver-tipo");
 	document.querySelector(".cafeventa").classList.remove("ver-cafeventa");
