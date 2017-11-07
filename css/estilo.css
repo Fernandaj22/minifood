@@ -412,7 +412,8 @@ nav{
 		height: calc(100% - 90px);
 		top: 90px;
 		overflow-y: scroll;
-		padding-bottom: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		box-sizing: border-box;
 	}
 	.nuevo, .registrado{
@@ -521,7 +522,7 @@ nav{
 	height: 100%;
 	float: left;
 	position: relative;
-	padding: 10px;
+	padding: 5px;
 	box-sizing: border-box;
 	display: none;
 	text-align: center;
@@ -584,16 +585,14 @@ nav{
     }
     .grafica-grande{
     	width: 70%;
-		height: 350px;
+		height: 330px;
 		position: relative;
 		float: left;
 		margin-left: 50%;
 		left: -35%;
-		margin-top: 15px;
+		margin-top: 10px;
 		border-radius: 5px;
 		border: 2px solid rgba(0,0,0,.2);
-		padding: 5px;
-		box-sizing: border-box;
 		display: flex;
     	justify-content: center;
     	align-content: center;
@@ -647,6 +646,7 @@ nav{
 		outline: none;
 		line-height: 35px;
 		color: rgba(0,0,0,.6);
+		cursor: default;
     }
     .opciones2{
 		width: 37%;
@@ -690,7 +690,8 @@ nav{
 	.ver-categoriag{
 		display: none !important;
 	}
-	.ver-categoriafv{
+	.ver-categoriafv, .ver-categoriafv, .ver-categoriacr, .ver-categoriafr, .ver-categoriad,
+	.ver-categoriar, .ver-categoriagu{
 		display: block !important;
 	}
 

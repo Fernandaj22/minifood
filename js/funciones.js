@@ -58,16 +58,82 @@ function gtipo(){
 	document.querySelector(".pedidos").classList.remove("ver-pedidos");
 	document.getElementById("idn").innerHTML = "Tipo de producto";
 }
+/*Funciones del submenu de Tipo de producto*/
 	function general(){
 		document.querySelector('.categoriag').classList.remove('ver-categoriag');
+		document.querySelector('.categoriafv').classList.remove('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.remove('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.remove('ver-categoriafr');
+		document.querySelector('.categoriad').classList.remove('ver-categoriad');
+		document.querySelector('.categoriar').classList.remove('ver-categoriar');
+		document.querySelector('.categoriagu').classList.remove('ver-categoriagu');
 		document.querySelector('.opciones2').classList.remove('ver-opciones2');
 		document.getElementById("idn2").innerHTML = "General";
 	}
 	function frutasyverduras(){
 		document.querySelector('.categoriag').classList.add('ver-categoriag');
 		document.querySelector('.categoriafv').classList.add('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.remove('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.remove('ver-categoriafr');
+		document.querySelector('.categoriad').classList.remove('ver-categoriad');
+		document.querySelector('.categoriar').classList.remove('ver-categoriar');
+		document.querySelector('.categoriagu').classList.remove('ver-categoriagu');
 		document.querySelector('.opciones2').classList.remove('ver-opciones2');
-		document.getElementById("idn2").innerHTML = "General";
+		document.getElementById("idn2").innerHTML = "Frutas y verduras";
+	}
+	function comidarapida(){
+		document.querySelector('.categoriag').classList.add('ver-categoriag');
+		document.querySelector('.categoriafv').classList.remove('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.add('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.remove('ver-categoriafr');
+		document.querySelector('.categoriad').classList.remove('ver-categoriad');
+		document.querySelector('.categoriar').classList.remove('ver-categoriar');
+		document.querySelector('.categoriagu').classList.remove('ver-categoriagu');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "Comida rápida";
+	}
+	function frituras(){
+		document.querySelector('.categoriag').classList.add('ver-categoriag');
+		document.querySelector('.categoriafv').classList.remove('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.remove('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.add('ver-categoriafr');
+		document.querySelector('.categoriad').classList.remove('ver-categoriad');
+		document.querySelector('.categoriar').classList.remove('ver-categoriar');
+		document.querySelector('.categoriagu').classList.remove('ver-categoriagu');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "Frituras";
+	}
+	function dulces(){
+		document.querySelector('.categoriag').classList.add('ver-categoriag');
+		document.querySelector('.categoriafv').classList.remove('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.remove('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.remove('ver-categoriafr');
+		document.querySelector('.categoriad').classList.add('ver-categoriad');
+		document.querySelector('.categoriar').classList.remove('ver-categoriar');
+		document.querySelector('.categoriagu').classList.remove('ver-categoriagu');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "Dulces";
+	}
+	function refresco(){
+		document.querySelector('.categoriag').classList.add('ver-categoriag');
+		document.querySelector('.categoriafv').classList.remove('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.remove('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.remove('ver-categoriafr');
+		document.querySelector('.categoriad').classList.remove('ver-categoriad');
+		document.querySelector('.categoriar').classList.add('ver-categoriar');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "Refrescos";
+	}
+	function agua(){
+		document.querySelector('.categoriag').classList.add('ver-categoriag');
+		document.querySelector('.categoriafv').classList.remove('ver-categoriafv');
+		document.querySelector('.categoriacr').classList.remove('ver-categoriacr');
+		document.querySelector('.categoriafr').classList.remove('ver-categoriafr');
+		document.querySelector('.categoriad').classList.remove('ver-categoriad');
+		document.querySelector('.categoriar').classList.remove('ver-categoriar');
+		document.querySelector('.categoriagu').classList.add('ver-categoriagu');
+		document.querySelector('.opciones2').classList.remove('ver-opciones2');
+		document.getElementById("idn2").innerHTML = "Agua";
 	}
 function gventa(){
 	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
