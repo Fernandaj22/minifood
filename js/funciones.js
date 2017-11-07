@@ -17,9 +17,18 @@ function desplegarAlertas(){
 }
 function desplegarOpciones(){
 	document.querySelector('.opciones').classList.toggle('ver-opciones');
+	document.querySelector('.opciones3').classList.remove('ver-opciones3');
+	document.querySelector('.opciones2').classList.remove('ver-opciones2');
 }
 function desplegarOp2(){
 	document.querySelector('.opciones2').classList.toggle('ver-opciones2');
+	document.querySelector('.opciones3').classList.remove('ver-opciones3');
+	document.querySelector('.opciones').classList.remove('ver-opciones');
+}
+function desplegarOp3(){
+	document.querySelector('.opciones3').classList.toggle('ver-opciones3');
+	document.querySelector('.opciones').classList.remove('ver-opciones');
+	document.querySelector('.opciones2').classList.remove('ver-opciones2');
 }
 function tablarecientes(){
 	document.querySelector('.recientes').classList.remove('ver-recientes');
@@ -42,6 +51,8 @@ function tablaentregados(){
 	document.querySelector('.enproceso').classList.remove('ver-enproceso');
 	document.getElementById("idn").innerHTML = "Pedidos entregados";
 }
+
+/*Funciones de la sección Estadísticas*/
 function gcafeterias(){
 	document.querySelector('.cafeterias').classList.remove('ver-cafeterias');
 	document.querySelector('.opciones').classList.remove('ver-opciones');
@@ -50,6 +61,14 @@ function gcafeterias(){
 	document.querySelector('.pedidos').classList.remove('ver-pedidos');
 	document.getElementById("idn").innerHTML = "Cafeterías";
 }
+/*Funciones de las diferentes gráficas de la cafetería*/
+	function ca1(){
+		document.querySelector('.ca1').classList.remove('ver-ca1');
+		document.querySelector('.opciones3').classList.remove('ver-opciones3');
+		document.getElementById("idn3").innerHTML = "Cafetería 1";
+	}
+/*FIN*/
+
 function gtipo(){
 	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
 	document.querySelector('.opciones').classList.remove('ver-opciones');
@@ -135,6 +154,8 @@ function gtipo(){
 		document.querySelector('.opciones2').classList.remove('ver-opciones2');
 		document.getElementById("idn2").innerHTML = "Agua";
 	}
+/*FIN*/
+
 function gventa(){
 	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
 	document.querySelector('.opciones').classList.remove('ver-opciones');
@@ -143,6 +164,7 @@ function gventa(){
 	document.querySelector(".pedidos").classList.remove("ver-pedidos");
 	document.getElementById("idn").innerHTML = "Venta general de la cafetería";
 }
+
 function gpedidos(){
 	document.querySelector('.cafeterias').classList.add("ver-cafeterias");
 	document.querySelector('.opciones').classList.remove('ver-opciones');

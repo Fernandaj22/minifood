@@ -585,7 +585,7 @@ nav{
     }
     .grafica-grande{
     	width: 70%;
-		height: 330px;
+		height: 340px;
 		position: relative;
 		float: left;
 		margin-left: 50%;
@@ -648,14 +648,14 @@ nav{
 		color: rgba(0,0,0,.6);
 		cursor: default;
     }
-    .opciones2{
+    .opciones2, .opciones3{
 		width: 37%;
 		margin-left: 31.5%;
 		box-sizing: border-box;
 		float: left;
 		position: relative;
 		overflow: hidden;
-		display: none;
+		display:none;
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
 		box-shadow: -10px 10px 10px -12px rgba(0,0,0,.5);
@@ -677,17 +677,17 @@ nav{
 	.opcion2:hover{
 		background: #EDF2FA;
 	}
-	.ver-opciones2{
+	.ver-opciones2, .ver-opciones3{
 		display: block !important;
 	}
 	.categoriafv, .categoriacr, .categoriafr, .categoriad,
 	.categoriar, .categoriagu{
 		display: none;
 	}
-	.categoriag{
+	.categoriag, .ca1{
 		display: block !important;
 	}
-	.ver-categoriag{
+	.ver-categoriag, .ver-ca1{
 		display: none !important;
 	}
 	.ver-categoriafv, .ver-categoriafv, .ver-categoriacr, .ver-categoriafr, .ver-categoriad,
