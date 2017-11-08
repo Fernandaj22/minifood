@@ -21,7 +21,7 @@ body, html{
 }
 .clogin{
 	width: 20%;
-	height: 200px;
+	height: 500px;
 	float: left;
 	position: relative;
 	background: var(--amarillo);
@@ -30,12 +30,25 @@ body, html{
 	box-sizing: border-box;
 	border-radius: 5px;
 }
+	.input{
+		width: 100%;
+		height: 150px;
+		float: left;
+		position: relative;
+	}
+	img{
+		width: 70%;
+		padding-top: 20px;
+		height: auto;
+	}
 	h1{
 		width: 100%;
 		height: 30px;
 		float: left;
 		position: relative;
 		font-weight: 400;
+		margin-top: 10px;
+		cursor: default;
 	}
 	p{
 		width: 30%;
@@ -43,23 +56,37 @@ body, html{
 		float: left;
 		position: relative;
 		margin-bottom: 20px;
-		margin-top: 30px;
+		margin-top: 33px;
 		margin-left: 5%;
 		box-sizing: border-box;
 		cursor: default;
 	}
-	input{
+	.input>input{
 		width: 50%;
 		height: 30px;
 		float: left;
 		position: relative;
 		border: none;
 		border-bottom: 1px solid rgba(0,0,0,.5);
-		margin-top: 25px;
+		margin-top: 30px;
 		margin-bottom: 20px;
 		margin-left: 10%;
 		box-sizing: border-box;
 		padding: 5px;
 		outline: none;
 		background: none;
+	}
+	.boton{
+		width: 30%;
+		height: 30px;
+		float: left;
+		position: relative;
+		margin-left: 50%;
+		left: -15%;
+		margin-top: 40px;
+		border: none;
+		border: 1px solid rgba(0,0,0,.1);
+		font-size: 15px;
+		border-radius: 5px;
+		cursor: pointer;
 	}
