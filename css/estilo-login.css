@@ -13,11 +13,24 @@
 body, html{
 	width: 100%;
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	background: var(--blanco);
+}
+.fondo1{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	background-image: url(img/Fondo1.jpg);
+	background-size: 100% 100%;
+}
+.fondo2{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+	margin-top: -662px;
+	float: right;
+	background-image: url(img/Fondo2.png);
+	background-size: 100% 100%;
 }
 .clogin{
 	width: 20%;
@@ -29,6 +42,7 @@ body, html{
 	padding: 10px;
 	box-sizing: border-box;
 	border-radius: 5px;
+	z-index: 999999999;
 }
 	.input{
 		width: 100%;
@@ -36,7 +50,7 @@ body, html{
 		float: left;
 		position: relative;
 	}
-	img{
+	.input>img{
 		width: 70%;
 		padding-top: 20px;
 		height: auto;
