@@ -2,7 +2,6 @@
 	font-family: 'Assistant', sans-serif;
 	padding: 0px;
 	margin: 0px;
-	color: var(--blanco);
 }
 :root{
 	--amarillo:rgb(255,255,145);
@@ -114,6 +113,7 @@ body, html{
 		cursor:pointer;
 		text-decoration:none;
 		text-shadow: 0px 1px 0px #7cacde;
+		color: var(--blanco);
 	}
 	.boton:hover{
 		background: #34D1BE;
