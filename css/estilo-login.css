@@ -121,5 +121,5 @@ body, html{
 	.boton:active{
 		position: relative;
 		top: 1px;
-		transition: .1s all;
+		transition: .3s all;
 	}
