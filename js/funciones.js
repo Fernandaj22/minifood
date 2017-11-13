@@ -1,10 +1,10 @@
 function cerrarSesion(){
 	document.querySelector('.bg').classList.toggle('ver-bg');
-	document.querySelector('.alerta_cs').classList.toggle('ver-acs');
+	document.querySelector('.alerta_g').classList.toggle('ver-ag');
 }
 function permanecer(){
 	document.querySelector('.bg').classList.remove('ver-bg');
-	document.querySelector('.alerta_cs').classList.remove('ver-acs');
+	document.querySelector('.alerta_g').classList.remove('ver-ag');
 }
 function mostrarmas(){
 	document.querySelector('.masopciones').classList.toggle('veropciones');

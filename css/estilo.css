@@ -104,33 +104,31 @@ nav{
 		cursor: pointer;
 	}
 /*=========================== ALERTAS ==================================*/
-.alerta_cs{
-	width: 20%;
-	height: 100px;
+.alerta_g{
+	width: 100%;
+	height: 60px;
 	float: left;
 	position: relative;
-	margin-left: 50%;
-	left: -10%;
-	margin-top: 20%;
+	top: 0px;
 	background: #fff;
 	z-index: 99999999999;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 5px;
 	box-sizing: border-box;
-	border-radius: 5px;
 	box-shadow: 1px 0px 10px 0px rgba(0,0,0,.4);
 	display: none;
+	transition: .3s all;
 }
-.ver-acs{
+.ver-ag{
 	display: block !important;
 }
 	h3{
 		width: 100%;
-		height: 30px;
+		height: 25px;
 		float: left;
 		position: relative;
 		color: rgba(0,0,0,.8);
-		padding-bottom: 10px;
+		padding-bottom: 7px;
 		box-sizing: border-box;
 		font-weight: 400;
 	}
@@ -140,13 +138,13 @@ nav{
 		float: left;
 		position: relative;
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		align-content: center;
 	}
 	.sino{
-		width: 30%;
-		height: 30px;
+		width: 7%;
+		height: 20px;
 		float: left;
 		position: relative;
 		border: none;
@@ -154,13 +152,27 @@ nav{
 		cursor: pointer;
 		border-radius: 5px;
 		font-weight: 700;
-		color: rgba(0,0,0,.8);
+		margin-left: 20px;
+		margin-right: 20px;
+		text-shadow: 3px 4px 14px rgba(122,150,150,.9)
 	}
 	.verde{
+		border: 2px solid #94FCC0;
+		background: rgba(255,255,255,.6);
+		color: #94FCC0;
+	}
+	.verde:hover{
 		background: #94FCC0;
+		color: var(--blanco);
 	}
 	.rojo{
+		border: 2px solid #EF565A;
+		background: rgba(255,255,255,.6);
+		color:  #EF565A;
+	}
+	.rojo:hover{
 		background: #EF565A;
+		color: var(--blanco);
 	}
 /*========================== ENCABEZADO ================================*/
 .header{
