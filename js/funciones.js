@@ -115,3 +115,26 @@ function registrarCafe(){
 		}
 	}
 }
+
+
+
+function login(){
+	usuario=document.getElementById('usuario');
+	password=document.getElementById('password');
+	if(usuario.value!="" && password.value!=""){
+		enviarAjax = new XMLHttpRequest();
+		enviarAjax.open('GET','ajax/login.php?u='+usuario.value+'&p='+password.value);
+		enviarAjax.send()
+		enviarAjax.onreadystatechange=function(){
+			if (enviarAjax.readyState == 4 && enviarAjax.status == 200) {
+				console.log(enviarAjax.responseText);
+				if (enviarAjax.responseText == "1") {
+					console.log('logueado')
+				}else{
+					console.log('no logueado')
+				}
+			}
+		}
+
+	}
+}
